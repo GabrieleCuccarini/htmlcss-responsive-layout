@@ -11,12 +11,20 @@
         flex-basis: calc(100% / 3 * 2);
     }
 
+    .col-md-1-4 {
+        flex-basis: 25%
+    }
+
+    .col-md-3-4 {
+        flex-basis: 75%
+    }
+    
     .container {
         width: 740px;
     }
 
-    .card img {
-        width: 100%;
+    .section.one .card img {
+        width: 50%;
     }
 }
 
@@ -45,5 +53,16 @@
     .container {
         width: 900px;
     }
+
+    .resized {
+        background-color: white;
+        margin-top: 9rem;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .h2-spaced {
+        padding: 5rem 0;
+    }
+
 }
-    

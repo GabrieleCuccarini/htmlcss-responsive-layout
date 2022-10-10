@@ -14,9 +14,11 @@ nav {
 
 h2 {
     font-size: 2rem;
-    color: rgb(0,132,253);
 }
 
+.section.one h2 {
+    color: rgb(0,132,253);
+}
 
 .nav-container-fixed {
     width: 100%;
@@ -62,13 +64,13 @@ h2 {
     padding: 5px 20px;
 }
 
-.section-1 {
+.section {
     margin-top: 2rem;
     text-align: center;
 }
 
 .container {
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -87,11 +89,13 @@ h2 {
 
 .col {
     flex-basis: 100%;
+}
+
+.section.one .col {
     background-color: rgb(181,221,255);
 }
 
-.card img {
-    width: 50%;
+.col-md-2-3 .col-lg-1-2 img {
     display: block;
     margin: 0 auto;
 }
@@ -101,9 +105,44 @@ h2 {
     font-size: 3rem;
 }
 
-.card h2 {
+.section.one .card h2 {
     padding: .6rem;
 }
+
+.col-violet {
+    background-color: rgb(151,146,228);
+}
+
+.col-lg-1-2 img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.section.three .card {
+    margin: 1rem;
+}
+
+.col-md-1-4 img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.col-md-3-4 h5 {
+    padding-top: 1rem;
+}
+
+.white > * {
+    color: white;
+}
+
+.black > * {
+    color: black;
+}
+
 
 /*COLONNE
 .col-1-2 {

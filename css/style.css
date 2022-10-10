@@ -5,15 +5,30 @@
     font-size: 14px;
 }
 
-.nav-container {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
+nav {
+    height: 5rem;
+    background-color: rgb(0,132,253);
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(0,132,253);
+}
+
+
+.nav-container-fixed {
     width: 100%;
     background-color: rgb(0,132,253);
     padding: 1rem;
+    position: fixed;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
-    height: 5rem;
 }
 
 .hamburg-menu i {
@@ -31,7 +46,65 @@
     padding: .5rem;
 }
 
-/*COLONNE*/
+.btn {
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 5px;
+    border: 0px;
+    margin-left: .5rem;
+}
+
+.btn-blue {
+    background-color: rgb(0,132,253);
+    color: white;
+    padding: 5px 20px;
+}
+
+.section-1 {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    background-color: rgb(181,221,255);
+}
+
+.card > * {
+    flex-basis: 100%;
+}
+
+.col {
+    flex-basis: 100%;
+}
+
+.card img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.card i {
+    font-size: 3rem;
+}
+
+.card h2 {
+    padding: .6rem;
+}
+
+/*COLONNE
 .col-1-2 {
     flex-basis: 50%
 }
@@ -54,4 +127,4 @@
 
 .col-100 {
     flex-basis: 100%
-}
+}*/

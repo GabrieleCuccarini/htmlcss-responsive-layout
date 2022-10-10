@@ -3,20 +3,20 @@
         font-size: 16px;
     }
 
-    .col-1-2 {
-        flex-basis: 50%
-    }
-
-    .col-1-3 {
+    .col-md-1-3 {
         flex-basis: calc(100% / 3);
     }
     
-    .col-2-3 {
+    .col-md-2-3 {
         flex-basis: calc(100% / 3 * 2);
     }
 
     .container {
         width: 740px;
+    }
+
+    .card img {
+        width: 100%;
     }
 }
 
@@ -31,6 +31,10 @@
 
     .hamburg-menu i {
         display: none;
+    }
+
+    .col-lg-1-2 {
+        flex-basis: 50%
     }
 
     .nav-container {

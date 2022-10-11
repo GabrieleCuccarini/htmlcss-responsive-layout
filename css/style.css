@@ -91,7 +91,7 @@ h2 {
 }
 
 .section.one .card {
-    border-radius: 20%;
+    border-radius: 10%;
     overflow: hidden;
 }
 
@@ -128,6 +128,8 @@ h2 {
     display: block;
     margin: 0 auto;
     width: 50%;
+    position: relative;
+    bottom: -14px;
 }
 
 .section.one .card h2 {

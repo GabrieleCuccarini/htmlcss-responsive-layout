@@ -30,6 +30,10 @@
         line-height: 1.7rem;
     }
 
+    .section.one .col-md-2-3 .col-lg-1-2 img {
+        bottom: -16px;
+    }
+
     .container {
         width: 740px;
     }
@@ -46,6 +50,7 @@
         left: 160px;
     }
     
+
 }
 
 @media  screen and (min-width: 920px) {
@@ -62,10 +67,10 @@
         display: none;
     }
 
-    .section.one .card img {
+    .section.one .col-md-2-3 .col-lg-1-2 img {
         width: 100%;
         position: relative;
-        bottom: -28px;
+        bottom: -30px;
     }
 
     .col-lg-1-4 {

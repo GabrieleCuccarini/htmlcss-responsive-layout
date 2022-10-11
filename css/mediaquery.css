@@ -99,8 +99,8 @@
         padding: 2rem;
     }
 
-    .h2-spaced {
-        padding: 5rem 0;
+    .section.two .container .col-lg-1-2 .h2-spaced {
+        padding: 10rem 0 4rem 0;
     }
 
 }

@@ -1,3 +1,8 @@
+:root {
+    --primary-color: rgb(0,132,253);
+    --secondary-color: rgb(151,146,228);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@
 
 nav {
     height: 5rem;
-    background-color: rgb(0,132,253);
+    background-color: var(--primary-color);
     width: 100%;
 }
 
@@ -17,14 +22,15 @@ h2 {
 }
 
 .section.one h2 {
-    color: rgb(0,132,253);
+    color: var(--primary-color);
 }
 
 .nav-container-fixed {
     width: 100%;
-    background-color: rgb(0,132,253);
+    background-color: var(--primary-color);
     padding: 1rem;
     position: fixed;
+    z-index: 3;
 }
 
 .nav-container {
@@ -58,29 +64,53 @@ h2 {
     margin-left: .5rem;
 }
 
+.btn-white {
+    color:var(--secondary-color);
+    padding: 15px 50px;
+}
+
 .btn-blue {
-    background-color: rgb(0,132,253);
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 20px;
+}
+
+.btn-violet {
+    background-color: var(--secondary-color);
     color: white;
     padding: 5px 20px;
 }
 
 .section {
-    margin-top: 2rem;
-    text-align: center;
+    padding: 1.5rem 0;
 }
 
 .container {
-    margin: 2rem auto;
+    margin: 1rem auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.section.one .card {
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+.section.one .card > * {
+    padding: 1rem;
 }
 
 .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
+}
+
+.section.one .card i {
+    color: var(--primary-color);
+    font-size: 4rem;
 }
 
 .card > * {
@@ -92,17 +122,14 @@ h2 {
 }
 
 .section.one .col {
+    text-align: center;
     background-color: rgb(181,221,255);
 }
 
 .col-md-2-3 .col-lg-1-2 img {
     display: block;
     margin: 0 auto;
-}
-
-.card i {
-    margin-top: 1rem;
-    font-size: 3rem;
+    width: 50%;
 }
 
 .section.one .card h2 {
@@ -119,16 +146,27 @@ h2 {
     margin: 0 auto;
 }
 
-.section.three .card {
-    margin: 1rem;
+.section.two .container h2 {
+    font-size: 1.5rem;
 }
 
-.col-md-1-4 img {
+.section.three .card {
+    margin: 1rem 2rem;
+    align-items: center;
+}
+
+.col-md-1-4 img,
+.section.five img {
     border-radius: 50%;
     width: 100%;
     max-width: 250px;
     display: block;
-    margin: 0 auto;
+    margin: 0.5rem auto;
+    aspect-ratio: 1/1;
+}
+
+.section.three .col.white {
+    padding-left: 1rem;
 }
 
 .col-md-3-4 h5 {
@@ -142,6 +180,97 @@ h2 {
 .black > * {
     color: black;
 }
+
+.section.four .card {
+    margin: 1rem;
+}
+
+.section.four .col {
+    background-color: white;
+    margin: 1rem;
+    border-radius: 50px;
+    padding: 2rem;
+}
+
+.section.five p {
+    margin-top: 2rem;
+}
+
+.section.five h2,
+.section.five .col-md-1-3 p {
+    color: var(--secondary-color);
+}
+
+.section.five .img-container {
+    position: relative;
+}
+
+.apex {
+    color: var(--secondary-color);
+    position: absolute;
+    right: 0px;
+}
+
+.section.six {
+    color: white;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.section.six .container .col > * {
+    margin: 1rem;
+}
+
+.section.six h6 {
+    color: rgb(213,212,244);
+    font-size: 1.1rem;
+}
+
+.section.six h5 {
+    font-size: 1.3rem;
+}
+
+.section.six h3 {
+    font-size: 3rem;
+    color: rgb(253,193,95);
+}
+
+.small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+}
+
+.section.six .small i {
+    font-size: .4rem;
+    color: white;
+    padding: .2rem;
+}
+
+footer .section.seven {
+    margin: 0;
+    background-color: rgb(51,51,51);
+    color: white;
+}
+
+.container-foot {
+    margin: 0 auto;
+    text-align: center;
+    width: 350px;
+}
+
+.container-foot p {
+    font-size: .9rem;
+}
+
+.container-foot a {
+    color: var(--secondary-color);
+    font-size: .9rem;
+}
+
+
+
 
 
 /*COLONNE

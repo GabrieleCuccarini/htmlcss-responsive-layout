@@ -6,6 +6,10 @@
     .col-md-1-3 {
         flex-basis: calc(100% / 3);
     }
+
+    .col-md-1-2 {
+        flex-basis: calc(50% - 2rem);
+    }
     
     .col-md-2-3 {
         flex-basis: calc(100% / 3 * 2);
@@ -41,8 +45,25 @@
         display: none;
     }
 
+    .section.one .card img {
+        width: 100%;
+        position: relative;
+    }
+
+    .col-lg-1-4 {
+        flex-basis: 25%
+    }
+
     .col-lg-1-2 {
         flex-basis: 50%
+    }
+
+    .col-lg-1-3 {
+        flex-basis: calc(100% / 3 - 2rem);
+    }
+    
+    .col-lg-3-4 {
+    flex-basis: 75%
     }
 
     .nav-container {
@@ -56,9 +77,10 @@
 
     .resized {
         background-color: white;
-        margin-top: 9rem;
+        margin-top: 10rem;
         border-radius: 3rem;
-        margin-bottom: 2rem;
+        padding: 2rem;
+        text-align: center;
     }
 
     .h2-spaced {
